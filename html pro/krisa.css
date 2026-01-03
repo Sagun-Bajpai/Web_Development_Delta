@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #141313;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 50;
+    padding: 0;
+    background-color: #0d0303;
+    
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .hero h2 {
+    margin-bottom: 1rem;
+  }
+  
+  section {
+    padding: 2rem 20px;
+    background-color: #a69f9f;
+    color: #110202;
+  }
+  
+  section#services ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .login-form {
+    background: #ada5a5;
+    color: #140303;
+    padding: 2rem;
+    margin:20px ;
+    max-width: 400px;
+    border: 1px solid #140101;
+    border-radius: 10px;
+  }
+  
+  .login-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-form input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form button {
+    padding: 0.5rem;
+    background: #0f0303;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background: #0d0303;
+  }
+  
+  footer {
+    background: #140303;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Form — 30 Fields</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,"Segoe UI",Roboto,'Noto Sans',Arial;}
+    body{background:#f4f7fb;padding:24px;display:flex;align-items:flex-start;justify-content:center}
+    .container{width:100%;max-width:900px;background:#fff;padding:24px;border-radius:10px;box-shadow:0 6px 30px rgba(21,32,43,0.08)}
+    h1{font-size:20px;margin:0 0 16px}
+    form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    label{display:block;font-size:13px;margin-bottom:6px}
+    input[type=text],input[type=password],input[type=email],input[type=tel],input[type=url],input[type=number],select,textarea,input[type=date]{width:100%;padding:10px;border:1px solid #dfe6ee;border-radius:6px;font-size:14px}
+    textarea{min-height:100px;resize:vertical}
+    .full{grid-column:1/-1}
+    .buttons{display:flex;gap:10px;justify-content:flex-end;grid-column:1/-1;margin-top:6px}
+    button{padding:10px 14px;border-radius:8px;border:0;background:#2563eb;color:white;font-weight:600}
+    .secondary{background:#e6eefc;color:#08306b}
+    .help{font-size:12px;color:#6b7280;margin-top:6px}
+    .row-radio{display:flex;gap:12px;align-items:center}
+    .note{font-size:12px;color:#6b7280}
+    @media (max-width:700px){form{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form (30 Fields)</h1>
+    <form id="regForm" enctype="multipart/form-data">
+      <!-- 1 -->
+      <div>
+        <label for="firstName">First Name *</label>
+        <input id="firstName" name="firstName" type="text" required />
+      </div>
+
+      <!-- 2 -->
+      <div>
+        <label for="lastName">Last Name *</label>
+        <input id="lastName" name="lastName" type="text" required />
+      </div>
+
+      <!-- 3 -->
+      <div>
+        <label for="username">Username *</label>
+        <input id="username" name="username" type="text" minlength="3" required />
+      </div>
+
+      <!-- 4 -->
+      <div>
+        <label for="password">Password *</label>
+        <input id="password" name="password" type="password" minlength="6" required />
+      </div>
+
+      <!-- 5 -->
+      <div>
+        <label for="confirmPassword">Confirm Password *</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" minlength="6" required />
+      </div>
+
+      <!-- 6 -->
+      <div>
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <!-- 7 -->
+      <div>
+        <label for="phone">Phone *</label>
+        <input id="phone" name="phone" type="tel" pattern="[0-9+\- ()]{7,20}" required />
+      </div>
+
+      <!-- 8 -->
+      <div>
+        <label for="dob">Date of Birth *</label>
+        <input id="dob" name="dob" type="date" required />
+      </div>
+
+      <!-- 9 -->
+      <div>
+        <label>Gender</label>
+        <div class="row-radio">
+          <label><input type="radio" name="gender" value="male" checked /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="other" /> Other</label>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="full">
+        <label for="address1">Address Line 1 *</label>
+        <input id="address1" name="address1" type="text" required />
+      </div>
+
+      <!-- 11 -->
+      <div class="full">
+        <label for="address2">Address Line 2</label>
+        <input id="address2" name="address2" type="text" />
+      </div>
+
+      <!-- 12 -->
+      <div>
+        <label for="city">City *</label>
+        <input id="city" name="city" type="text" required />
+      </div>
+
+      <!-- 13 -->
+      <div>
+        <label for="state">State/Province *</label>
+        <input id="state" name="state" type="text" required />
+      </div>
+
+      <!-- 14 -->
+      <div>
+        <label for="zip">ZIP / Postal Code *</label>
+        <input id="zip" name="zip" type="text" required />
+      </div>
+
+      <!-- 15 -->
+      <div>
+        <label for="country">Country *</label>
+        <select id="country" name="country" required>
+          <option value="">Select country</option>
+          <option>India</option>
+          <option>United States</option>
+          <option>United Kingdom</option>
+          <option>Canada</option>
+          <option>Australia</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- 16 -->
+      <div>
+        <label for="profession">Profession</label>
+        <input id="profession" name="profession" type="text" />
+      </div>
+
+      <!-- 17 -->
+      <div>
+        <label for="company">Company</label>
+        <input id="company" name="company" type="text" />
+      </div>
+
+      <!-- 18 -->
+      <div>
+        <label for="website">Website</label>
+        <input id="website" name="website" type="url" placeholder="https://example.com" />
+      </div>
+
+      <!-- 19 -->
+      <div>
+        <label for="linkedin">LinkedIn Profile</label>
+        <input id="linkedin" name="linkedin" type="url" placeholder="https://linkedin.com/in/username" />
+      </div>
+
+      <!-- 20 -->
+      <div>
+        <label for="github">GitHub Profile</label>
+        <input id="github" name="github" type="url" placeholder="https://github.com/username" />
+      </div>
+
+      <!-- 21 -->
+      <div>
+        <label for="education">Highest Education</label>
+        <select id="education" name="education">
+          <option value="">Select</option>
+          <option>High School</option>
+          <option>Bachelor's</option>
+          <option>Master's</option>
+          <option>PhD</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- 22 -->
+      <div>
+        <label for="college">University / College</label>
+        <input id="college" name="college" type="text" />
+      </div>
+
+      <!-- 23 -->
+      <div>
+        <label for="gradYear">Graduation Year</label>
+        <input id="gradYear" name="gradYear" type="number" min="1900" max="2100" />
+      </div>
+
+      <!-- 24 -->
+      <div class="full">
+        <label for="skills">Skills (comma separated)</label>
+        <textarea id="skills" name="skills"placeholder="e.g. JavaScript, Python, SQL"></textarea>
+      </div>
+
+      <!-- 25 -->
+      <div>
+        <label for="experience">Years of Experience</label>
+        <input id="experience" name="experience" type="number" min="0" max="60" />
+      </div>
+
+      <!-- 26 -->
+      <div>
+        <label for="jobType">Preferred Job Type</label>
+        <select id="jobType" name="jobType">
+          <option value="">Select</option>
+          <option>Full-time</option>
+          <option>Part-time</option>
+          <option>Contract</option>
+          <option>Internship</option>
+          <option>Freelance</option>
+        </select>
+      </div>
+
+      <!-- 27 -->
+      <div>
+        <label for="resume">Upload Resume (PDF)</label>
+        <input id="resume" name="resume" type="file" accept="application/pdf" />
+      </div>
+
+      <!-- 28 -->
+      <div>
+        <label for="photo">Profile Photo (JPG/PNG)</label>
+        <input id="photo" name="photo" type="file" accept="image/*" />
+      </div>
+
+      <!-- 29 -->
+      <div>
+        <label><input id="terms" name="terms" type="checkbox" required /> I agree to the Terms & Conditions *</label>
+        <div class="note">(Required)</div>
+      </div>
+
+      <!-- 30 -->
+      <div>
+        <label><input id="newsletter" name="newsletter" type="checkbox" /> Subscribe to Newsletter</label>
+      </div>
+
+      <div class="buttons">
+        <button type="reset" class="secondary">Reset</button>
+        <button type="submit">Register</button>
+      </div>
+
+      <p class="help full">* Required fields. This form is a frontend template — connect it to your backend (API) to store submissions securely.</p>
+    </form>
+  </div>
+
+  <script>
+    // Simple client-side password match check
+    const form = document.getElementById('regForm');
+    const pwd = document.getElementById('password');
+    const cpwd = document.getElementById('confirmPassword');
+
+    function checkPasswordMatch(){
+      if(cpwd.value && pwd.value !== cpwd.value){
+        cpwd.setCustomValidity('Passwords do not match');
+      } else {
+        cpwd.setCustomValidity('');
+      }
+    }
+    pwd.addEventListener('input', checkPasswordMatch);
+    cpwd.addEventListener('input', checkPasswordMatch);
+
+    form.addEventListener('submit', (e)=>{
+      if(!form.checkValidity()) return; // let browser show validation
+      e.preventDefault();
+      // Collect form data — example preview in console (remove in production)
+      const data = new FormData(form);
+      const obj = {};
+      for(const [k,v] of data.entries()){
+        obj[k]=v;
+      }
+      console.log('Form submission (example):', obj);
+      alert('Form ready to submit — check console for example payload. Connect to backend to save data.');
+    });
+  </script>
+</body>
+</html>

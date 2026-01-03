@@ -1,0 +1,21 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(139, 77, 77);
+    border: 2px solid black;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: steps(5); /* 5 steps me transition hoga*/
+    
+    
+    
+}
+
+
+
+div:hover{
+    background-color: cadetblue;
+    color: brown;
+    font-size:20px ;
+    transform: rotate(180);
+}

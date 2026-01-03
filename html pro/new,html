@@ -1,0 +1,28 @@
+<!--Driver Code Starts{-->
+<html>
+
+<head>
+<!--Driver Code Ends }-->
+    <style>
+        /* CSS Rule */
+        h1 {
+            color: blue;
+            /* Property: value */
+            font-size: 24px;
+        }
+
+        p {
+            color: green;
+            font-size: 16px;
+        }
+    </style>
+<!--Driver Code Starts{-->
+</head>
+
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple paragraph.</p>
+</body>
+
+</html>
+<!--Driver Code Ends }-->

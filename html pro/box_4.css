@@ -1,0 +1,31 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(3, 93, 103);
+    color:bisque;
+   border-width: 5px;
+   border-style: solid;
+   border-color: rgb(58, 59, 59);
+   text-align: center;
+   border-radius: 15px; 
+/* border aur content ke mid ka space  padding-left: 25px; padding-right: 25px;  padding-bottom: 20px;
+   padding-top: 20px;*/
+   padding: 25px 20px 25px 20px; /* top right bottom left clock wise*/
+   margin : 20px 20px 20px 20px;/* top right bottom left clock wise*/
+  
+}
+
+h1{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(238, 98, 98);
+    color:rgba(21, 15, 8, 0.586);
+  /*  border-width: 5px;
+   border-style: solid;
+   border-color:gray;*/
+   border: 5px solid rgba(122, 3, 3, 0.671)
+
+}
+
+
+    

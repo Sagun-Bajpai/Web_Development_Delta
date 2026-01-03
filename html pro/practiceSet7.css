@@ -1,0 +1,25 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+}
+@media(max-width:300px){
+    div{
+        background-color: rgb(31, 122, 17);
+    }
+}
+@media(min-width:300px)and((max-width:400px)){
+    div{
+        background-color: rgb(146, 50, 108);
+    }
+}
+@media(min-width:400px)and((max-width:500px)){
+    div{
+        background-color: rgb(149, 98, 128);
+    }
+}
+@media(min-width:600px){
+    div{
+        background-color: blue;
+    }
+}

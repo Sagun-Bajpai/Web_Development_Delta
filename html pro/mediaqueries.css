@@ -1,0 +1,21 @@
+div{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}
+@media(width:400px){
+    div{
+        background-color: black;
+    }
+}
+
+@media (max-width:600px){
+    div{
+        background-color: rgb(32, 139, 139);
+    }
+
+@media (min-width:200px )and(max-width:300px){
+    div{
+        background-color: rgb(113, 136, 136);
+    }
+}}

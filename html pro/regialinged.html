@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            width: 700px;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        .row div {
+            width: 200px;
+            font-weight: bold;
+        }
+        .row input, .row select, .row textarea {
+            flex: 1;
+            padding: 6px;
+        }
+        textarea {
+            height: 70px;
+        }
+        .inline {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Registration Form (30 Fields)</h1>
+
+<form>
+
+    <div class="row">
+        <div>First Name</div>
+        <input type="text" name="name"/>
+    </div>
+
+    <div class="row">
+        <div>Last Name</div>
+        <input type="text" name="lastname"/>
+    </div>
+
+    <div class="row">
+        <div>User Name</div>
+        <input type="text" name="username"/>
+    </div>
+
+    <div class="row">
+        <div>Password</div>
+        <input type="password" name="password"/>
+    </div>
+
+    <div class="row">
+        <div>Confirm Password</div>
+        <input type="password" name="confirm password"/>
+    </div>
+
+    <div class="row">
+        <div>Email</div>
+        <input type="email" name="email"/>
+    </div>
+
+    <div class="row">
+        <div>Phone</div>
+        <input type="number" name="phone"/>
+    </div>
+
+    <div class="row">
+        <div>Date of Birth</div>
+        <input type="date" name="dob"/>
+    </div>
+
+    <div class="row">
+        <div>Gender</div>
+        <div class="inline">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+    </div>
+
+    <div class="row">
+        <div>Address</div>
+        <textarea name="address"></textarea>
+    </div>
+
+    <div class="row">
+        <div>City</div>
+        <select>
+            <option>Select City</option>
+            <option>Delhi</option>
+            <option>Lucknow</option>
+            <option>Noida</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div>State / Province</div>
+        <input type="text" name="state"/>
+    </div>
+
+    <div class="row">
+        <div>ZIP / Postal Code</div>
+        <input type="text" name="postalcode"/>
+    </div>
+
+    <div class="row">
+        <div>Country</div>
+        <select>
+            <option>Select Country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>Canada</option>
+            <option>Dubai</option>
+            <option>Others</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div>Profession</div>
+        <input type="text" name="profession"/>
+    </div>
+
+    <div class="row">
+        <div>Company</div>
+        <input type="text" name="company"/>
+    </div>
+
+    <div class="row">
+        <div>Website</div>
+        <input type="url" name="website"/>
+    </div>
+
+    <div class="row">
+        <div>LinkedIn Profile</div>
+        <input type="url" name="linkedin"/>
+    </div>
+
+    <div class="row">
+        <div>Github Profile</div>
+        <input type="url" name="github"/>
+    </div>
+
+    <div class="row">
+        <div>Highest Education</div>
+        <select>
+            <option>High School</option>
+            <option>Bachelor's</option>
+            <option>Master's</option>
+            <option>PhD</option>
+            <option>Other</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div>University / College</div>
+        <input type="text" name="university"/>
+    </div>
+
+    <div class="row">
+        <div>Graduation Year</div>
+        <input type="text" name="graduation"/>
+    </div>
+
+    <div class="row">
+        <div>Skills</div>
+        <textarea name="skills"></textarea>
+    </div>
+
+    <div class="row">
+        <div>Years of Experience</div>
+        <input type="number" name="experience"/>
+    </div>
+
+    <div class="row">
+        <div>Preferred Job Type</div>
+        <select>
+            <option>Select</option>
+            <option>Full-time</option>
+            <option>Part-time</option>
+            <option>Contract</option>
+            <option>Internship</option>
+            <option>Freelance</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div>Upload Resume (PDF)</div>
+        <input type="file" name="resume"/>
+    </div>
+
+    <div class="row">
+        <div>Profile Photo</div>
+        <input type="file" name="photo"/>
+    </div>
+
+    <div class="row">
+        <div></div>
+        <div class="inline">
+            <input type="checkbox"> I agree to Terms & Conditions  
+            <input type="checkbox"> Subscribe to Newsletter
+        </div>
+    </div>
+
+    <div class="row">
+        <div></div>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </div>
+
+</form>
+
+</body>
+</html>
