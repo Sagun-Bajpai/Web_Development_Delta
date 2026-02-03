@@ -1,0 +1,60 @@
+#box1{
+height: 100px;
+width: 200px;
+background-color: cadetblue;
+font-size: 10px;
+}
+
+#box2{
+    height: 50px;
+    width: 30%;
+    background-color: rgb(132, 91, 91);
+    margin-left: 20%;
+    font-size: 2em;
+    width: 5em;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(131, 156, 156);
+    border: solid;
+    border-color: black;
+    display: inline-block;
+}
+#boxA{
+    position: static; /* no change any position*/
+    top: 50px;
+    bottom: 20px;
+    
+    
+}
+#boxB{
+    position: relative;
+   
+    left: 20px;
+    right: 5px;
+    bottom: 0px;
+}
+#boxC{
+    position: sticky;
+  top: 20px;
+  left: 20;
+}
+#boxD{
+    position: fixed;
+   top: 0px;
+    
+}
+
+#boxD{
+    background-image: url("bird_photos.jpg");
+    background-size: cover;
+}
+body{
+    background-image:url("notebook.jpg") ;
+    background-size: cover;
+}
+
+
+   
