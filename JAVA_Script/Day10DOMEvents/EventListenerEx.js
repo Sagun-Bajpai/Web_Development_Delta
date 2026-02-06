@@ -1,5 +1,5 @@
 let btn=document.querySelector("button");
-btn.addEventListener("dblclick",function(event){//event is a bydefault argument
+btn.addEventListener("dblclick",function(event){//event/e is a bydefault argument
     console.log(event);
     console.log("double clicked your button");
 });
