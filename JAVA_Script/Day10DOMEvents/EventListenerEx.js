@@ -1,12 +1,12 @@
 let btn=document.querySelector("button");
-btn.addEventListener("dblclick",function(event){//event/e is a bydefault argument
+btn.addEventListener("dblclick",function(event){//event/e  is a by default argument
     console.log(event);
     console.log("double clicked your button");
 });
 
 
 let p=document.querySelector("p");
-p.addEventListener("click",function(event){//event is a bydefault argument
+p.addEventListener("click",function(event){//event is a by default argument
     console.log(event);
     console.log("clicked your paragraph");
 });
