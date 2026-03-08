@@ -25,4 +25,5 @@ savetoDB("Apna collage",()=>{
 //ye nested form me callback hell start ho gya promises se
 //jb first data saved hoga then second save hone jayega ,agr second save hoga tb third hone jayega agr kishi bhi dtata me weak connection aaya toh stop krr jayega.
 //that is call back hell
+//esme maine asynchronous situation create kiya hai humne
 
