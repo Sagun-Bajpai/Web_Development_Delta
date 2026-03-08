@@ -15,3 +15,5 @@ changeColor("red",1000,() =>{
         });
     });
 });
+
+//callbacks nesting -> callbacks hell
